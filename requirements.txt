@@ -1,0 +1,11 @@
+pandas
+plotly
+streamlit
+scikit-learn
+pandas-datareader
+prophet
+streamlit-extras
+pycaret
+mlflow
+seaborn
+nbconvert

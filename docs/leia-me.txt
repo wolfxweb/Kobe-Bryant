@@ -1,0 +1,10 @@
+Para executar o projeto crie o anbiente virtual depois instale as dependencias do arquivo requirements.txt no seu ambiente 
+
+Para cria o abiente no linux ou mac utilize o comando 
+python3 -m venv nome_do_ambiente
+
+Iniciando o ambiente
+source nome_do_ambiente/bin/activate
+
+Comando executar o requirements
+pip install -r requirements.txt
