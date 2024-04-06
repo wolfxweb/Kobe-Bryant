@@ -37,4 +37,5 @@ with mlflow.start_run(experiment_id=experiment_id, run_name='PipelineAplicacao')
     data_prod.to_parquet('../data/processed/prediction_prod.parquet')
     mlflow.log_artifact('../data/processed/prediction_prod.parquet')
 
+
     print(data_prod)
