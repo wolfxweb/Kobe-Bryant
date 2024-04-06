@@ -15,7 +15,10 @@ df_dev = pd.read_parquet(dev_file)
 # st.write(df_dev)
 st.title("Painel de Controle")
 st.subheader("Engenharia de Machine Learning")
-st.text("Exprimento utilizando a base de dados  https://www.kaggle.com/c/kobe-bryant-shot-selection/data")
+st.markdown("""
+        Em homenagem ao jogador da NBA Kobe Bryant (falecido em 2020), foram disponibilizados os dados de 20 anos de arremessos, bem sucedidos ou não, e informações correlacionadas.
+O objetivo desse estudo é aplicar técnicas de inteligência artificial para prever se um arremesso será convertido em pontos ou não. 
+ata""")
 fignum = plt.figure(figsize=(6,4))
 # Saida do modelo dados dev
 sns.distplot(df_dev.prediction_score_1,
@@ -28,9 +31,6 @@ sns.distplot(df_prod.predict_score,
              ax = plt.gca())
 
 
-
-# User wine
-
 plt.title('Monitoramento Desvio de Dados da Saída do Modelo')
 plt.ylabel('Densidade Estimada')
 plt.xlabel('Probabilidade')
@@ -42,7 +42,7 @@ st.pyplot(fignum)
 
 
 try:
-    st.subheader("Classsification report")
+    st.subheader("Classsification report base desenvolvimento")
     target_column = 'shot_made_flag'
     if target_column in df_dev.columns:
         report = metrics.classification_report(df_dev.prediction_label, df_dev[target_column], output_dict=True)
