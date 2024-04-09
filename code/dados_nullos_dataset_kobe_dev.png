@@ -1,0 +1,26 @@
+Coluna,Tipo,Valores Nulos
+action_type,object,0
+combined_shot_type,object,0
+game_event_id,int64,0
+game_id,int64,0
+lat,float64,0
+loc_x,int64,0
+loc_y,int64,0
+lon,float64,0
+minutes_remaining,int64,0
+period,int64,0
+playoffs,int64,0
+season,object,0
+seconds_remaining,int64,0
+shot_distance,int64,0
+shot_made_flag,float64,3986
+shot_type,object,0
+shot_zone_area,object,0
+shot_zone_basic,object,0
+shot_zone_range,object,0
+team_id,int64,0
+team_name,object,0
+game_date,object,0
+matchup,object,0
+opponent,object,0
+shot_id,int64,0
